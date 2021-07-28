@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
+    <title>我的简历</title>
+    <style>
+        * {
+            box-sizing: border-box
+        }
+
+        body {
+            background: #eee;
+            margin: 20px 0
+        }
+
+        article {
+            width: 21cm;
+            min-height: 29.7cm;
+            background: #fff;
+            margin: 0 auto;
+            overflow: auto;
+            padding: 1em
+        }
+    </style>
+    <style media="print">
+        body {
+            margin: 0;
+        }
+
+        .page2 {
+            page-break-before: always;
+            margin-top: 30px;
+        }
+    </style>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        article {
+            padding-top: 30px;
+        }
+
+        p {
+            margin: .3em 0;
+        }
+
+        strong {
+            font-weight: normal;
+            color: #f60;
+        }
+
+        ol,
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        a {
+            color: #999;
+        }
+
+        h1 {
+            font-size: 25px;
+            margin-top: 0;
+        }
+
+        h4,
+        h5,
+        h6 {
+            font-weight: normal;
+        }
+
+        h3,
+        h4,
+        h5,
+        h6 {
+            margin: 0;
+        }
+
+        p,
+        li {
+            color: #666;
+        }
+
+        .bio {
+            position: relative;
+        }
+
+        .bio img {
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+    </style>
+    <style>
+        .projects {
+            margin-top: 40px;
+        }
+
+        .projects p {
+            color: #666
+        }
+
+        .projects strong {
+            color: #f60;
+        }
+
+        .projects > ol {
+            list-style-position: inside;
+            padding: 0;
+        }
+
+        .projects > ol > li {
+            margin-bottom: 24px;
+        }
+
+        .projects > ol > li > header {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .projects > ol > li h3 {
+            display: inline-block;
+        }
+    </style>
+    <style>
+        .skills {
+        }
+
+        #skills {
+
+            width: 500px;
+            height: 270px;
+        }
+
+        @media print {
+            #skills {
+                display: none;
+            }
+        }
+
+
+        .skills > .wrapper {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .skills > .wrapper > :first-child {
+            margin-right: 12px;
+        }
+
+        .skills > .wrapper > #skills {
+        }
+
+        .skills > .wrapper > ul {
+            color: #666;
+        }
+
+        .skills > .wrapper strong {
+            color: #f60;
+        }
+
+        .skills > .wrapper > ul > li {
+            line-height: 1.2;
+            margin-bottom: 8px;
+        }
+    </style>
+    <style>
+        .openSource {
+        }
+
+        .openSource > h2 {
+        }
+
+        .openSource > ul {
+        }
+
+        .openSource > ul > li {
+            margin-bottom: 20px;
+        }
+
+        .openSource header {
+            position: relative;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .openSource h2 {
+        }
+    </style>
+    <style>
+        .jobs {
+        }
+
+        .jobs > h2 {
+        }
+
+        .job > ol {
+        }
+
+        .jobs > ol > li {
+            margin: 12px 0;
+        }
+
+        .jobs header {
+            display: flex;
+            color: #666;
+            margin-bottom: 12px;
+        }
+
+        .jobs header > h3 {
+            font-size: 18px;
+            color: #333;
+        }
+
+        .jobs header > h4 {
+            margin-left: 1em;
+            font-size: 18px;
+        }
+
+        .jobs header > span {
+            font-size: 18px;
+            margin-left: auto;
+        }
+    </style>
+    <style>
+        @media (max-width: 500px) {
+            body {
+                margin: 0;
+            }
+
+            .bio img {
+                display: none;
+            }
+
+            article {
+                width: auto;
+                height: auto;
+            }
+
+            .skills .wrapper {
+                flex-direction: column;
+            }
+
+            #skills {
+                width: auto;
+                margin-bottom: 20px;
+            }
+
+            .jobs header {
+                flex-direction: column;
+            }
+
+            .jobs header > h3,
+            .jobs header > h4,
+            .jobs header > span {
+                margin: 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+<article>
+    <section class="bio">
+        <h1>徐丹</h1>
+        <img src="./images/my photo.jpg" alt="" width="125" height="170">
+        <p>
+            女 | 25岁 | 本科 | 前端开发工程师 | 武汉
+        </p>
+
+        <text style="color:#666">
+            手机号：<a href="tel:12345678">18571560917</a> |
+            邮箱：<a href="mailto:550467116@qq.com">550467116@qq.com</a>
+        </text>
+        <p>
+            <strong>个人技术博客</strong>：<a href="https://www.zhihu.com/people/egggs/posts">博客链接</a>
+        </p>
+
+    </section>
+
+
+    <section class="projects">
+        <h2>项目经历</h2>
+        <ol>
+            <li>
+                <header>
+                    <h3>Egg记账-Vue版本</h3>
+                    <span>
+                            <a href="https://github.com/eggs530/account-1">源码私有</a>
+                            <a href="https://eggs530.github.io/account-1-website/#/money">项目预览</a>
+                        </span>
+                </header>
+                <p>
+                    一个基于 <strong>Vue</strong> / <strong>VueRouter</strong> / <strong>Vuex</strong> /
+                    <strong>TypeScript</strong>的移动端单页面应用。
+                </p>
+
+                <p>
+                    由本人独立设计及实现，从自己的需求出发，设计出的极简记账应用，特点是快速记账，
+                    而且可以通过图表查看自己的消费习惯。
+                </p>
+                <p>
+                    期间遇到了很多<strong>webpack</strong>和TypeScript方面的问题，解决过程记录在本人博客
+                </p>
+                <p>
+                    该项目源代码几乎完全用 <strong>TypeScript</strong>实现，也用到了<strong>装饰器语法</strong>
+                </p>
+            </li>
+            <li>
+                <header>
+                    <h3>Egg记账-React版本</h3>
+                    <span>
+                            <a href="https://github.com/eggs530/morney-react-1">源码私有</a>
+                            <a href="https://eggs530.github.io/morney-react--website/#/money">项目预览</a>
+                        </span>
+                </header>
+                <p>
+                    一个基于 <strong>React</strong> / <strong>ReactRouter</strong> / <strong>自定义Hooks</strong> /
+                    <strong>TypeScript</strong>/<strong>Webpack</strong>实现的极简主义记账应用
+                </p>
+                <p>
+                    该项目使我对<strong>TypeScript</strong>/<strong>Webpack</strong>以及<strong>Hooks API</strong>
+                    有了更深入的理解，我将项目中遇到的问题都计入到了我的博客中
+                </p>
+            </li>
+            <li>
+                <header>
+                    <h3>可视化大屏</h3>
+                    <span>
+                            <a href="https://github.com/eggs530/Large-screen">源码私有</a>
+                            <a href="https://eggs530.github.io/Large-screen-website/index.html#/">项目预览</a>
+                        </span>
+                </header>
+                <p>
+                    一个基于 <strong>React</strong> / <strong>ReactRouter</strong> / <strong>Echarts</strong> /
+                    的可视化大屏项目。
+                </p>
+
+                <p>
+                    这个项目是我在学习前端可视化与 echarts 时，仿照网络上的设计稿制作而成的。
+                </p>
+                <p>
+                    页面布局使用了 Grid 和 Flex 布局，为了适应所有屏幕，我使用了动态 rem 方案
+                    项目中包含的图例有柱形图、折线图、饼图、地图和表格等，并且所有图例都可以实时更新数据并辅以动画交互。
+                    通过这个项目，我掌握了大屏可视化项目的制作技巧。
+                </p>
+            </li>
+        </ol>
+    </section>
+
+
+    <section class="skills">
+        <h2>技能</h2>
+        <div class="wrapper">
+            <div id="skills"></div>
+            <ul>
+                <li>熟悉静态页面，能将设计稿<strong>完美还原</strong></li>
+                <li>熟悉<strong>前后端分离</strong>技术，包括 AJAX、跨域、前端路由、Cookie、Session 等</li>
+                <li>熟练掌握 <strong>Vue全家桶</strong>的使用，包括 VueCli、VueRouter、Vuex 等</li>
+                <li>熟练掌握 <strong>React全家桶</strong>的使用，包括 create-react-app、ReactRouter、Redux 等</li>
+                <li>熟悉 ES6，包括 let / Promise / await / 析构赋值</li>
+                <li>了解 <strong>TypeScript</strong> 的使用，我的项目就是 TS 实现的</li>
+                <li>了解 <strong>Webpack 的配置和优化</strong></li>
+            </ul>
+        </div>
+    </section>
+
+
+    <section class="openSource">
+        <h2>开源项目</h2>
+        <ul>
+            <li class="page2">
+                <header>
+                    <h3>自己写的 DOM 库</h3>
+                    <a href="https://github.com/eggs530/dom-demo">源码链接</a>
+                </header>
+                <p>实现了元素选择、元素创建、<strong>事件委托</strong>、滑动手势等常见功能</p>
+            </li>
+            <li>
+                <header>
+                    <h3>会动的皮卡丘</h3>
+                    <span>
+                            <a href="https://github.com/eggs530/pikachu">源码链接</a>
+                            <a href="https://eggs530.github.io/pikachu/src/test.html">项目预览</a>
+                        </span>
+                </header>
+                <p>这是我在学习 <strong>CSS3和动画</strong> 时制作的一个可爱作品</p>
+            </li>
+            <li>
+                <header>
+                    <h3>简易画板</h3>
+                    <span>
+                            <a href="https://github.com/eggs530/canvas-demo-1">源码链接</a>
+                            <a href="https://eggs530.github.io/canvas-demo-1/index.html">项目预览</a>
+                        </span>
+                </header>
+                <p>我在学习 <strong>Canvas</strong> 时做的一个小作品，具备切换画笔颜色、画笔粗细、清楚画布、保存画布的功能</p>
+            </li>
+        </ul>
+    </section>
+
+    <section class="jobs">
+        <h2>工作经历</h2>
+        <ol>
+            <li>
+                <header>
+                    <h3> 武汉多来增值电信技术有限公司 </h3>
+                    <h4>运营主管</h4>
+                    <span><time>2017年7月</time>~<time>2021年8月</time></span>
+                </header>
+            </li>
+        </ol>
+    </section>
+</article>
+<script src="https://cdn.bootcdn.net/ajax/libs/echarts/5.0.0-alpha.1/echarts.min.js"></script>
+<script src="./main.js"></script>
+</body>
+
+</html>
